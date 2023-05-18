@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="telalogin.css">
+  <link rel="stylesheet" href="telaregistro.css">
+  <title>Parallax</title>
+</head>
+<body>
+    <header>
+        <section class="headerestático">
+            <div class="menusuperior">
+                <ul>
+                    <li class="navitem"><a href="#home1" class="navlink">SmarthHome</a></li>
+                    <li class="navitem"><a href="#home2" class="navlink">Personalize</a></li>
+                    <li class="navitem"><a href="#home3" class="navlink">Conforto</a></li>
+                <div>
+                    <input type="button" value="Entrar" class="navinput" onclick="menuLoginAbrir()">
+                    <input type="button" value="Cadastro" class="navinput" onclick="menuCadastroAbrir()">
+                </div>
+                </ul>
+            </div>
+        </section>
+    </header>
+    <section class="cadastromenu">
+        <div>
+            <h2>Cadastre-se</h2>
+            <form action="">
+                <div>
+                    <label for="login">LOGIN</label>
+                    <input type="login" name="login" id="login" placeholder="Informe seu Login">
+                </div>
+                <div>
+                    <label for="email">E-MAIL</label>
+                    <input type="email" name="email" id="email" placeholder="Informe seu Email">
+                </div>
+                <div>
+                    <label for="senha">SENHA</label>
+                    <input type="senha" name="senha" id="senha" placeholder="Informe sua Senha">
+                </div>
+                <div>
+                    <label for="confsenha">CONFIRMAR A SENHA</label>
+                    <input type="confsenha" name="confsenha" id="confsenha" placeholder="confirme sua Senha">
+                </div>
+                <div>
+                    <button>Enviar</button>
+                </div>
+        </div>
+        </form>
+
+    </section>
+
+    <section class="loginmenu">
+        <div>
+            <div class="loginform">
+                <h2>Login</h2>
+                <form action="">
+                    <div>
+                        <label for="login">E-MAIL</label>
+                        <input type="email" name="email" id="email" placeholder="Informe seu Login">
+                    </div>
+                    <div>
+                        <label for="senha">SENHA</label>
+                        <input type="senha" name="senha" id="senha" placeholder="Informe sua Senha">
+                    </div>
+                    <a href="#" class="esqueceusenha">Esqueceu sua senha?</a>
+                    <a href="#" class="naotemconta" onclick="menuLoginAbrir(),menuCadastroAbrir()">não tem uma conta? <strong>CADASTRE-SE</strong></a><!--nao tem a necessidade da tag A arrumar dps-->
+                    <div>
+                        <button>Enviar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+  <div class="wrapper"> 
+    <main>
+      <section class="module parallax parallax-1" id="home1">
+        <h1>Smart Home</h1>
+      </section>
+
+      <section class="module content">
+        <div class="container">
+          <h2>Bem-vindo(a)</h2>
+          <p>
+           Com a tecnologia avançada de casas inteligentes, você pode controlar sua casa com o toque de um botão ou simplesmente com sua voz. Imagine poder ajustar a temperatura do ambiente, fechar as cortinas, ligar as luzes e até mesmo controlar o sistema de som com um simples comando de voz.
+          </p>
+          <p>
+            Com um sistema de casa inteligente, você tem o controle total de sua casa na palma de suas mãos, esteja você dentro de casa ou em qualquer lugar do mundo. Com a capacidade de monitorar e controlar praticamente todos os aparelhos eletrônicos em sua casa, você pode economizar energia e dinheiro enquanto aproveita o máximo conforto e segurança.
+          </p>
+        </div>
+      </section>
+      
+      <section class="module parallax parallax-2" id="home2">
+        <h1>Personalize sua casa</h1>
+      </section>
+    
+      <section class="module content">
+        <div class="container">
+          <h2>Nossos Sistemas</h2>
+          <p>
+            Com nossos sistemas de casa inteligente, você pode personalizar completamente sua casa para atender às suas necessidades individuais. Com o uso de sensores de movimento, câmeras de segurança, e termostatos inteligentes, você pode criar um ambiente seguro e confortável para você e sua família.
+          </p>
+          <p>
+            Além disso, nosso sistema de casa inteligente também pode ajudá-lo a economizar dinheiro em suas contas de energia elétrica. Ao monitorar seu consumo de energia em tempo real, você pode identificar quais dispositivos estão usando mais energia e tomar medidas para reduzir seu uso.
+          </p>
+        </div>
+      </section>
+      
+      <section class="module parallax parallax-3" id="home3">
+        <h1>Tenha Mais Conforto</h1>
+      </section>
+
+      <section class="module content">
+        <div class="container">
+          <h2>Baixe o Nosso App</h2>
+          <p>
+            Com a tecnologia de casa inteligente você facilita o manuseio dos recursos tecnologicos de sua casa.Se você quer uma casa mais conveniente, segura e eficiente, não perca mais tempo e atualize sua casa com a tecnologia de casa inteligente. Descubra agora mesmo como podemos ajudar a tornar sua casa mais inteligente e eficiente.
+          </p>
+          
+        </div>
+      </section>
+      <section class="botaoparacima">
+        <a href="#">&#9650;</a>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </div>
+
+</body>
+</html>
